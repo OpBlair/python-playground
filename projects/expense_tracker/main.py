@@ -1,5 +1,7 @@
-import csv
 import json
+import os
+
+FILENAME = "expense.json"
 
 def main():
     while True:
@@ -24,10 +26,18 @@ def main():
             print("Invalid choice choose an option between 1 and 4.")
 
 def load_expenses():
-    pass
+    if not os.path.exists(FILENAME):
+        return []
+    try:
+        with open(FILENAME, "r") as file:
+            return json.load(file)
+    except json.JSONDecodeError:
+        return []
 
-def save_expenses():
-    pass
+def save_expenses(expenses):
+    with open(FILENAME, "w") as file:
+        json.dump(expenses, file, indent=4)
+    
 
 def add_expense():
     pass
