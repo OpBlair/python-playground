@@ -1,0 +1,102 @@
+[
+    {
+        "prompt": "What is the capital of France?",
+        "options": ["A. London", "B. Paris", "C. Berlin", "D. Madrid"],
+        "answer": "B"
+    },
+    {
+        "prompt": "What is the output of `print(2 ** 3)` in Python?",
+        "options": ["A. 5", "B. 6", "C. 8", "D. 9"],
+        "answer": "C"
+    },
+    {
+        "prompt": "Which keyword is used to define a function in Python?",
+        "options": ["A. function", "B. def", "C. fun", "D. define"],
+        "answer": "B"
+    },
+    {
+        "prompt": "Which of the following data types is immutable in Python?",
+        "options": ["A. List", "B. Dictionary", "C. Set", "D. Tuple"],
+        "answer": "D"
+    },
+    {
+        "prompt": "What is the correct file extension for Python files?",
+        "options": ["A. .pt", "B. .pyt", "C. .py", "D. .python"],
+        "answer": "C"
+    },
+    {
+        "prompt": "Which symbol is used to write single-line comments in Python?",
+        "options": ["A. #", "B. //", "C. /*", "D. <!--"],
+        "answer": "A"
+    },
+    {
+        "prompt": "Which of the following functions is used to get the length of a list in Python?",
+        "options": ["A. size()", "B. length()", "C. len()", "D. count()"],
+        "answer": "C"
+    },
+    {
+        "prompt": "How do you start a `for` loop in Python?",
+        "options": ["A. for x in y:", "B. for (x = 0; x < y; x++)", "C. for x to y:", "D. foreach x in y:"],
+        "answer": "A"
+    },
+    {
+        "prompt": "Which list method is used to add an item to the end of an existing list?",
+        "options": ["A. .insert()", "B. .add()", "C. .append()", "D. .extend()"],
+        "answer": "C"
+    },
+    {
+        "prompt": "How do you safely access a dictionary value by key without raising a KeyError if the key doesn't exist?",
+        "options": ["A. dict.get(key)", "B. dict.find(key)", "C. dict.fetch(key)", "D. dict.value(key)"],
+        "answer": "A"
+    },
+    {
+        "prompt": "Which keyword is paired with `try` to handle exceptions in Python?",
+        "options": ["A. catch", "B. except", "C. error", "D. handle"],
+        "answer": "B"
+    },
+    {
+        "prompt": "What is the output of `print(type(5.0))` in Python?",
+        "options": ["A. <class 'int'>", "B. <class 'str'>", "C. <class 'float'>", "D. <class 'double'>"],
+        "answer": "C"
+    },
+    {
+        "prompt": "What is the correct operator for floor division (integer division) in Python?",
+        "options": ["A. /", "B. //", "C. %", "D. \\"],
+        "answer": "B"
+    },
+    {
+        "prompt": "Which keyword is used to import a specific function from a module?",
+        "options": ["A. require", "B. include", "C. load", "D. from"],
+        "answer": "D"
+    },
+    {
+        "prompt": "In Machine Learning regression, what does an R-squared (R2) score of 1.0 mean?",
+        "options": ["A. The model's predictions are worse than guessing the baseline mean.", "B. The model has zero variance.", "C. The model perfectly explains all the variance in the target data.", "D. The model is completely overfitted and useless."],
+        "answer": "C"
+    },
+    {
+        "prompt": "Which distance metric calculates the minimum 'work' or effort required to transform one probability distribution into another?",
+        "options": ["A. Euclidean distance", "B. Wasserstein distance (Earth Mover's Distance)", "C. Manhattan distance", "D. Cosine similarity"],
+        "answer": "B"
+    },
+    {
+        "prompt": "What regression model utilizes an 'alpha' penalty parameter to restrict coefficients from growing too large and overreacting to noise?",
+        "options": ["A. Linear Regression", "B. Ridge Regression", "C. Decision Tree Regressor", "D. K-Nearest Neighbors"],
+        "answer": "B"
+    },
+    {
+        "prompt": "Which cross-validation strategy is best suited to prevent data leakage and evaluate performance on entirely unseen time-series seasons or blocks?",
+        "options": ["A. Stratified K-Fold CV", "B. ShuffleSplit CV", "C. Leave-One-Group-Out CV", "D. Standard 5-Fold CV"],
+        "answer": "C"
+    },
+    {
+        "prompt": "What type of data drift scenario occurs when the underlying statistical distributions of input features change over time?",
+        "options": ["A. Covariate drift (Data drift)", "B. Concept drift", "C. Model drift", "D. Prior probability drift"],
+        "answer": "A"
+    },
+    {
+        "prompt": "What metric scales the error of a model heavily based on single-point massive mistakes because it squares the errors before taking an average?",
+        "options": ["A. Mean Absolute Error (MAE)", "B. R-squared (R2)", "C. Alert Recall", "D. Root Mean Squared Error (RMSE)"],
+        "answer": "D"
+    }
+]
