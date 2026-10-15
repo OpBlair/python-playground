@@ -1,6 +1,26 @@
-tasks = []
+import json
+import os
+
+FILENAME = "tasks.json"
+
+def load_tasks():
+    """Load tasks from the JSON file if it exists."""
+    if os.path.exists(FILENAME):
+        try:
+            with open(FILENAME, "r") as file:
+                return json.load(file)
+        except json.JSONDecodeError:
+            print("Error reading tasks file. Starting with an empty task list.")
+    return []
+
+def save_tasks(tasks):
+    """Save the current task list to the JSON file."""
+    with open(FILENAME, "w") as file:
+        json.dump(tasks, file, indent=4)
 
 def main():
+    tasks = load_tasks()
+    
     while True:
         print("\n--- Daily Task Scheduler ---")
         print("1. Add Task")
@@ -14,6 +34,7 @@ def main():
             task_name = input("Enter the task description: ").strip()
             if task_name:
                 tasks.append({"title": task_name, "completed": False})
+                save_tasks(tasks)
                 print(f"Task '{task_name}' added successfully!")
             else:
                 print("Task description cannot be empty.")
@@ -33,6 +54,7 @@ def main():
                 task_num = int(input("Enter the task number to mark complete: "))
                 if 1 <= task_num <= len(tasks):
                     tasks[task_num - 1]["completed"] = True
+                    save_tasks(tasks)
                     print(f"Task '{tasks[task_num - 1]['title']}' marked as complete!")
                 else:
                     print("Invalid task number.")
